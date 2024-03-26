@@ -1,7 +1,8 @@
 import "./App.css";
-import down_arrow from "./assets/down_arrow.svg";
+import down_arrow from "./assets/icons/down_arrow.svg";
 import Header from "./components/Header.tsx";
 import Statistic from "./components/Statisitic.tsx";
+import Spin from "./components/Spin.tsx";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             to work towards a more diverse future for tech. Scroll below to find
             out how.
           </p>
-          <img className="down-arrow" src={down_arrow} alt="" />
+          <img className="down-arrow" src={down_arrow} alt="Down Arrow" />
         </div>
       </section>
       <section id="what" className="section-1">
@@ -65,44 +66,57 @@ function App() {
         </p>
         <ul>
           <li>
-            Limited Perspectives: When everyone in a certain profession comes
-            from similar backgrounds, they might not think of all the different
-            ways people might use technology. This means we could miss out on
-            cool new ideas and inventions that could help everyone.
+            <h2>Limited Perspectives</h2>
+            <p>
+              When everyone in a certain profession comes from similar
+              backgrounds, they might not think of all the different ways people
+              might use technology. This means we could miss out on cool new
+              ideas and inventions that could help everyone.
+            </p>
           </li>
           <li>
-            Bias in Technology: Ever heard the saying "garbage in, garbage out"?
-            Well, it's true for tech too! Sometimes, the people who make
-            technology don't think about everyone who might use it. For example,
-            facial recognition software might not work as well for people with
-            darker skin tones, which could lead to some pretty bad situations.
+            <h2>Bias in Technology</h2>
+            <p>
+              Ever heard the saying "garbage in, garbage out"? Well, it's true
+              for tech too! Sometimes, the people who make technology don't
+              think about everyone who might use it. For example, facial
+              recognition software might not work as well for people with darker
+              skin tones, which could lead to some pretty bad situations.
+            </p>
           </li>
           <li>
-            Underrepresentation of Customers: If the people making tech don't
-            look like the people using it, they might not make stuff that works
-            for everyone. This means some people could miss out on cool tech
-            that could make their lives easier.
+            <h2>Underrepresentation of Customers</h2>
+            <p>
+              If the people making tech don't look like the people using it,
+              they might not make stuff that works for everyone. This means some
+              people could miss out on cool tech that could make their lives
+              easier.
+            </p>
           </li>
           <li>
-            Limited Opportunities: When there's not enough diversity in the IT
-            world, it's harder for people from different backgrounds to get in
-            on the action. That means some really smart and talented people
-            might not get the chance to shine.
+            <h2>Limited Opportunities</h2>
+            <p>
+              When there's not enough diversity in the IT world, it's harder for
+              people from different backgrounds to get in on the action. That
+              means some really smart and talented people might not get the
+              chance to shine.
+            </p>
           </li>
           <li>
-            Negative Impacts on Society: Tech has a huge impact on how we live
-            our lives, and when it's not made with everyone in mind, it can make
-            things worse. Biased tech can make unfairness and inequality even
-            worse in our society.
-          </li>
-          <li>
-            To fix these problems, we need to make sure the IT world looks more
-            like the real world. That means doing things like training people on
-            diversity and inclusion, reaching out to groups that don't have as
-            much representation, and making workplaces more welcoming to
-            everyone.
+            <h2>Negative Impacts on Society</h2>
+            <p>
+              Tech has a huge impact on how we live our lives, and when it's not
+              made with everyone in mind, it can make things worse. Biased tech
+              can make unfairness and inequality even worse in our society.
+            </p>
           </li>
         </ul>
+        <p>
+          To fix these problems, we need to make sure the IT world looks more
+          like the real world. That means doing things like training people on
+          diversity and inclusion, reaching out to groups that don't have as
+          much representation, and making workplaces more welcoming to everyone.
+        </p>
       </section>
       <section id="how" className="section-3">
         <h1>How can you help?</h1>
@@ -113,7 +127,8 @@ function App() {
         </p>
         <ul>
           <li>
-            <h2>Find a Mentor:</h2>
+            <Spin></Spin>
+            <h2>Find a Mentor</h2>
             <p>
               Think of a mentor like your personal guide through the jungle of
               IT. They've been there, done that, and can offer killer advice on
@@ -123,7 +138,7 @@ function App() {
             </p>
           </li>
           <li>
-            <h2>Build Your Squad:</h2>
+            <h2>Build Your Squad</h2>
             <p>
               Surround yourself with a tribe of kick-ass women and allies in the
               industry. Whether it's joining professional groups, hitting up
@@ -132,7 +147,7 @@ function App() {
             </p>
           </li>
           <li>
-            <h2>Hone Your Tech Skills:</h2>
+            <h2>Hone Your Tech Skills</h2>
             <p>
               Time to sharpen those coding swords! Building up your technical
               skills, whether it's mastering coding languages, diving into
@@ -141,7 +156,7 @@ function App() {
             </p>
           </li>
           <li>
-            <h2>Speak Up for Yourself: </h2>
+            <h2>Speak Up for Yourself</h2>
             <p>
               Your voice matters! Don't be afraid to toot your own horn and
               advocate for your skills and achievements. Whether it's
@@ -151,7 +166,7 @@ function App() {
             </p>
           </li>
           <li>
-            <h2>Fight Bias Like a Boss:</h2>
+            <h2>Fight Bias Like a Boss</h2>
             <p>
               Unfortunately, bias can rear its ugly head in the workplace. But
               fear not, you've got the power to combat it! Speak out against any
@@ -170,7 +185,10 @@ function App() {
         </p>
         <ul>
           <li>
-            <h2>High Demand:</h2>
+            <h2>
+              High Demand
+              <span className="material-symbols-outlined">trending_up</span>
+            </h2>
             <p>
               Think about how much we rely on tech every day. From scrolling
               through social media to streaming our fave shows, tech is
@@ -179,7 +197,10 @@ function App() {
             </p>
           </li>
           <li>
-            <h2>Job Security:</h2>
+            <h2>
+              Job Security
+              <span className="material-symbols-outlined">encrypted</span>
+            </h2>
             <p>
               As long as tech keeps booming, there'll always be gigs for IT
               rockstars. So, if you're looking for a career path with some
@@ -187,14 +208,19 @@ function App() {
             </p>
           </li>
           <li>
-            <h2>Good Pay: </h2>
+            <h2>
+              Good Pay <span className="material-symbols-outlined">paid</span>
+            </h2>
             <p>
               Cha-ching! With all that demand for tech skills, comes some sweet
               paychecks. Score!
             </p>
           </li>
           <li>
-            <h2>Continuous Learning:</h2>
+            <h2>
+              Continuous Learning
+              <span className="material-symbols-outlined">local_library</span>
+            </h2>
             <p>
               Tech is like a never-ending rollercoaster of new stuff to learn.
               Whether it's mastering the latest coding language or diving into
@@ -203,7 +229,10 @@ function App() {
             </p>
           </li>
           <li>
-            <h2>Flexibility:</h2>
+            <h2>
+              Flexibility
+              <span className="material-symbols-outlined">alt_route</span>
+            </h2>
             <p>
               Wanna work from a cozy coffee shop or your fave chill spot? No
               problemo! Tech jobs often offer the flexibility to work from
@@ -211,7 +240,10 @@ function App() {
             </p>
           </li>
           <li>
-            <h2>Innovation:</h2>
+            <h2>
+              Innovation
+              <span className="material-symbols-outlined">lightbulb</span>
+            </h2>
             <p>
               If you're into cool, cutting-edge stuff, IT is where it's at!
               Think VR, AI, and all sorts of mind-blowing tech that's changing

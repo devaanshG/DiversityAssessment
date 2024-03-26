@@ -1,29 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap");
+
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 header {
-    width: 100vw;
-    height: 10vh;
-    padding: 0px 80px;
+  width: 100vw;
+  height: 10vh;
+  padding: 80px 20px;
 }
 
 header nav {
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 header nav ul {
-    height: 100%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  transition: all 0.4s ease;
 }
 
 header nav ul li a {
-    font-size: 20px;
-    letter-spacing: 4px;
-    text-decoration: none;
+  font-family: "Wix Madefor Text", sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-weight: 100;
+  /* text-transform: uppercase; */
+  transition: all 0.4s ease;
+  color: white;
+  letter-spacing: 4px;
+}
+
+header nav ul li a:hover {
+  letter-spacing: 14px;
+}
+
+header nav ul li:hover {
+  /* transform: translate(-10px, -2px); */
 }
