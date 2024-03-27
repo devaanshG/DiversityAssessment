@@ -22,6 +22,7 @@ function App() {
           <img className="down-arrow" src={down_arrow} alt="Down Arrow" />
         </div>
       </section>
+      <section className="cover-spacer"></section>
       <section id="what" className="section-1">
         <h1>So what's the issue?</h1>
         <p>
@@ -119,61 +120,62 @@ function App() {
         </p>
       </section>
       <section id="how" className="section-3">
-        <h1>How can you help?</h1>
-        <p>
-          Hey ladies, breaking into the IT world can sometimes feel like
-          navigating a maze, but fear not! Here are some awesome strategies to
-          help you conquer those barriers and soar in your IT career:
-        </p>
+        <div>
+          <h1>How can you help?</h1>
+          <p>
+            Hey ladies, breaking into the IT world can sometimes feel like
+            navigating a maze, but fear not! Here are some awesome strategies to
+            help you conquer those barriers and soar in your IT career:
+          </p>
+        </div>
         <ul>
           <li>
-            <Spin></Spin>
-            <h2>Find a Mentor</h2>
-            <p>
-              Think of a mentor like your personal guide through the jungle of
+            <Spin
+              heading={"Find a Mentor"}
+              description={`Think of a mentor like your personal guide through the jungle of
               IT. They've been there, done that, and can offer killer advice on
               everything from career paths to handling workplace challenges.
               Don't be shy to reach out and connect with someone who's been in
-              your shoes!
-            </p>
+              your shoes!`}
+            ></Spin>
           </li>
           <li>
-            <h2>Build Your Squad</h2>
-            <p>
-              Surround yourself with a tribe of kick-ass women and allies in the
+            <Spin
+              heading={"Build Your Squad"}
+              description={`Surround yourself with a tribe of kick-ass women and allies in the
               industry. Whether it's joining professional groups, hitting up
               industry events, or just grabbing coffee with fellow techies,
-              having a crew who's got your back can make all the difference.
-            </p>
+              having a crew who's got your back can make all the difference.`}
+            ></Spin>
           </li>
           <li>
-            <h2>Hone Your Tech Skills</h2>
-            <p>
-              Time to sharpen those coding swords! Building up your technical
+            <Spin
+              heading={"Hone Your Tech Skills"}
+              description={`Time to sharpen those coding swords! Building up your technical
               skills, whether it's mastering coding languages, diving into
               software development, or beefing up your cybersecurity chops, is
-              key to slaying it in the IT realm.
-            </p>
+              key to slaying it in the IT realm.`}
+            ></Spin>
           </li>
           <li>
-            <h2>Speak Up for Yourself</h2>
-            <p>
-              Your voice matters! Don't be afraid to toot your own horn and
+            <Spin
+              heading={"Speak Up for Yourself"}
+              description={`Your voice matters! Don't be afraid to toot your own horn and
               advocate for your skills and achievements. Whether it's
               negotiating your salary, taking on challenging projects, or
               pushing for more training opportunities, own your worth and go
-              after what you deserve!
-            </p>
+              after what you deserve!`}
+            ></Spin>
           </li>
           <li>
-            <h2>Fight Bias Like a Boss</h2>
-            <p>
-              Unfortunately, bias can rear its ugly head in the workplace. But
+            <Spin
+              heading={"Fight Bias Like a Boss"}
+              description={`Unfortunately, bias can rear its ugly head in the workplace. But
               fear not, you've got the power to combat it! Speak out against any
               unfair treatment, get involved in diversity initiatives, and
               champion a more inclusive workplace culture. Together, we can make
-              waves and create a more equitable tech world!
-            </p>
+              waves and create a more equitable tech world!`}
+            ></Spin>
           </li>
         </ul>
       </section>

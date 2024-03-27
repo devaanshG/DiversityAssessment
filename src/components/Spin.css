@@ -1,0 +1,51 @@
+.spin-card {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  /* background-color: aqua; */
+  padding: 20px;
+  width: 100vw;
+  height: 120px;
+  perspective: 1000px;
+}
+
+.spin-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.spin-card h2 {
+  font-size: 80px;
+}
+
+.spin-card p {
+}
+
+.spin-card:hover .spin-card-inner {
+  transform: rotateX(180deg);
+  background-color: rgb(255, 255, 255);
+}
+
+.spin-card-front,
+.spin-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.spin-card-front {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Style the back side */
+.spin-card-back {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transform: rotateX(180deg);
+}

@@ -4,12 +4,13 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 header {
   width: 100vw;
   height: 10vh;
-  padding: 80px 20px;
+  padding: 20px 20px;
 }
 
 header nav {
@@ -45,8 +46,4 @@ header nav ul li a {
 
 header nav ul li a:hover {
   letter-spacing: 14px;
-}
-
-header nav ul li:hover {
-  /* transform: translate(-10px, -2px); */
 }

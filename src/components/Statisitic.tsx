@@ -1,17 +1,19 @@
-import './Statistic.css';
+import "./Statistic.css";
 
 interface StatisticProps {
-    stat: Number;
-    desc: String;
+  stat: Number;
+  desc: String;
 }
 
-function Statistic({stat, desc}:StatisticProps) {
-    return <>
-    <div className='stat-container'>
+function Statistic({ stat, desc }: StatisticProps) {
+  return (
+    <>
+      <div className="stat-container">
         <h1>{stat}%</h1>
         <p>{desc}</p>
-    </div>
+      </div>
     </>
-} 
+  );
+}
 
 export default Statistic;
