@@ -1,0 +1,18 @@
+.carousel-item {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 50px;
+  width: 80vw;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.carousel-item > h1 {
+  white-space: normal;
+}
+
+.carousel-item > p {
+  white-space: normal;
+}

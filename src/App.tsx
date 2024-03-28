@@ -3,6 +3,7 @@ import down_arrow from "./assets/icons/down_arrow.svg";
 import Header from "./components/Header.tsx";
 import Statistic from "./components/Statisitic.tsx";
 import Spin from "./components/Spin.tsx";
+import Carousel from "./components/Carousel.tsx";
 
 function App() {
   return (
@@ -185,7 +186,10 @@ function App() {
           Ever wonder why so many people are jazzed about a career in IT? Check
           it out:
         </p>
-        <ul>
+
+        <Carousel />
+
+        {/* <ul>
           <li>
             <h2>
               High Demand
@@ -252,7 +256,7 @@ function App() {
               the world as we know it.
             </p>
           </li>
-        </ul>
+        </ul> */}
       </section>
     </>
   );

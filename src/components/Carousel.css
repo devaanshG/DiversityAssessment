@@ -1,0 +1,31 @@
+.carousel {
+  margin-top: 50px;
+  width: 80vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-inner {
+  /* background-color: rgb(56, 56, 56); */
+  /* box-shadow: 4px 4px 35px 0px rgba(150, 150, 150, 0.505); */
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons {
+  margin: 60px auto;
+  width: 50%;
+  display: flex;
+  /* background-color: antiquewhite; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.carousel-buttons button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
