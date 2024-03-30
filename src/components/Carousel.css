@@ -1,3 +1,4 @@
+/* Styling the main carousel container, hiding overflow (the carousel items) and creating a vertical flexbox */
 .carousel {
   margin-top: 50px;
   width: 80vw;
@@ -7,22 +8,22 @@
   justify-content: center;
 }
 
+/* Styling the carousel inner to not wrap, allowing content to overflow, creating the carousel effect */
 .carousel-inner {
-  /* background-color: rgb(56, 56, 56); */
-  /* box-shadow: 4px 4px 35px 0px rgba(150, 150, 150, 0.505); */
   white-space: nowrap;
   transition: all 0.3s ease;
 }
 
+/* Styling the container of the carousel buttons using a flexbox */
 .carousel-buttons {
   margin: 60px auto;
   width: 50%;
   display: flex;
-  /* background-color: antiquewhite; */
   align-items: center;
   justify-content: space-evenly;
 }
 
+/* Removing the default button styles */
 .carousel-buttons button {
   background-color: transparent;
   color: white;

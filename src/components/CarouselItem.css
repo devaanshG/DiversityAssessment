@@ -1,16 +1,22 @@
+/* Styling each carousel item */
 .carousel-item {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 40px 50px;
   width: 80vw;
-  height: 200px;
+  height: 600px;
   background-color: rgb(255, 255, 255);
   color: black;
 }
 
+/* Fixing the white-space setting on the content inside the carousel item, so that it wraps correctly */
 .carousel-item > h1 {
   white-space: normal;
+}
+
+.carousel-item > h1 span {
+  font-size: 100%;
 }
 
 .carousel-item > p {

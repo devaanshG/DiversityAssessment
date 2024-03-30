@@ -3,15 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
 
-/* Remove default */
+/* Remove default styles, and add custom google font */
 
 * {
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: "Sen", sans-serif;
   vertical-align: middle;
 }
+
+/* Style the header component to be fixed at the top */
 
 header {
   background-color: black;
@@ -22,9 +25,9 @@ header {
   z-index: 1;
 }
 
-body {
-  background-color: black;
-}
+/* Style the cover section on the home page of the website
+    a z-index of -1 is given in order for the next section to scroll above
+*/
 
 .cover {
   position: fixed;
@@ -37,6 +40,12 @@ body {
   width: 100vw;
   padding-top: 30vh;
 }
+
+/* Styles for the typewriter-animated text
+  To make the typewriter animation, css keyframes are used, that simply adjust the width of the component, revealing characters of the text. The animation is stepped through which gives the illusion of the typewriter.
+
+  A blinking animation for the right-border is used in order to give the effect of a cursor
+*/
 
 .typewriter {
   width: fit-content;
@@ -76,6 +85,8 @@ body {
   }
 }
 
+/* Style the cover text */
+
 section.cover p {
   margin-top: 20px;
   font-weight: 100;
@@ -83,6 +94,7 @@ section.cover p {
   /* font-size: 20px; */
 }
 
+/* Style the arrow with animation, also done using keyframes that simply adjust the position of the arrow */
 .down-arrow {
   height: 200px;
   position: absolute;
@@ -103,48 +115,49 @@ section.cover p {
   }
 }
 
+/* Add an empty element to allow for the scrolling effect on the home page cover */
 .cover-spacer {
   height: 100vh;
   width: 100vw;
   background-color: transparent;
 }
 
+/* Styles for the 'What' section of the home page, formerly section-1 */
 .section-1 {
   background-color: white;
-  /* background: rgb(222, 255, 192); */
-  /* background: radial-gradient(
-    circle,
-    rgba(222, 255, 192, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  ); */
-  background-attachment: fixed;
   width: 100vw;
   color: black;
   padding: 15vh 10vw;
 }
 
 section h1 {
-  font-size: 40px;
+  font-size: 90px;
+  font-weight: 600;
 }
 
 section p {
   margin-top: 15px;
+  font-size: 18px;
 }
 
+/* Styles for the 'Why" page of the website, formerly section-2
+  Used a background image that is darkened, using the background-blend-mode, as well as a semi-translucent black overlay
+*/
 .section-2 {
   background: rgba(0, 0, 0, 0.55) url(./assets/diversity-people-3.png);
   background-blend-mode: darken;
   background-size: cover;
-  /* background-attachment: fixed; */
   color: white;
   padding: 15vh 10vw;
 }
 
+/* Styling the icons */
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 24;
   margin-left: 10px;
 }
 
+/* Styling the list items on the 'Why' page to look like cards, with some shadow */
 .section-2 li {
   margin: 20px;
   list-style: none;
@@ -154,24 +167,18 @@ section p {
   padding: 20px;
 }
 
+/* Styles for the 'How' page, formerly section-3 */
 .section-3 {
   background-color: white;
   padding: 15vh 0vw;
-  /* background: rgb(222, 255, 192);
-  background: radial-gradient(
-    circle,
-    rgba(222, 255, 192, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  ); */
-  /* background-attachment: fixed; */
 }
 
 .section-3 > div {
-  /* background-color: aqua; */
   width: 80vw;
   margin: auto;
 }
 
+/* Styling the page info content, at the start of the page */
 .section-3 > div > h1 {
   font-size: 100px;
 }
@@ -184,6 +191,7 @@ section p {
   margin-top: 50px;
 }
 
+/* Styling the 'Careers' page, formerly section-4 */
 .section-4 {
   color: white;
   padding: 15vh 10vw;
