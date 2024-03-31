@@ -12,8 +12,10 @@ function How() {
         <div>
           <h1>How can you help?</h1>
           <p>
-            Hey ladies, breaking into the IT world can sometimes feel like
-            navigating a maze, but fear not! Here are some awesome strategies to
+            We need you! You have the power of fixing the diversity gap in IT by
+            undertaking IT courses and subjects, as well as empowering peers.
+            Although breaking into the IT world can sometimes feel like
+            navigating a maze, fear not! Here are some awesome strategies to
             help you conquer those barriers and soar in your IT career:
           </p>
         </div>
@@ -32,7 +34,7 @@ function How() {
           <li>
             <Spin
               heading={"Build Your Squad"}
-              description={`Surround yourself with a tribe of kick-ass women and allies in the
+              description={`Surround yourself with a tribe of kick-ass people and allies in the
               industry. Whether it's joining professional groups, hitting up
               industry events, or just grabbing coffee with fellow techies,
               having a crew who's got your back can make all the difference.`}
