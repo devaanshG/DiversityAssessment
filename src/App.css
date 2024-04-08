@@ -201,3 +201,14 @@ section p {
 .section-4 li {
   margin: 20px;
 }
+
+footer {
+  height: 10vh;
+  padding: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-size: 40px;
+}

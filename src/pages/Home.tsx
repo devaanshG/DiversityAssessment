@@ -64,6 +64,7 @@ function Home() {
           }
         ></Statistic>
       </section>
+      <footer>Made by Devaansh Gupta</footer>
     </>
   );
 }
